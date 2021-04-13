@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="uH4-J9-tHr">
+            <objects>
+                <viewController storyboardIdentifier="CustomPopupVC" id="UaC-eY-bBu" customClass="PopUpViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vw7-Qo-Uve">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="Hbh-mN-Ozm">
+                                <rect key="frame" x="0.0" y="70" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-3Y-OwX">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="TR3-Hc-ZKF">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TR3-Hc-ZKF" id="vdQ-Ti-hpT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aeu-Uw-jAq">
+                                                    <rect key="frame" x="15" y="11" width="46" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Afghanistan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkT-46-H0C">
+                                                    <rect key="frame" x="69" y="10" width="69" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UaC-eY-bBu" id="2A7-Np-83k"/>
+                                    <outlet property="delegate" destination="UaC-eY-bBu" id="G9r-bl-c6k"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMH-jq-EMO">
+                                <rect key="frame" x="52" y="33" width="173" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2IY-3a-lSP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDZ-4O-ptD">
+                                <rect key="frame" x="20" y="33" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="23W-Qg-DUC"/>
+                                    <constraint firstAttribute="height" constant="21" id="O5N-j4-FCA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MmY-3Y-OwX" firstAttribute="leading" secondItem="YP9-2d-AvQ" secondAttribute="leading" id="1mF-h7-BoG"/>
+                            <constraint firstItem="Hbh-mN-Ozm" firstAttribute="top" secondItem="vw7-Qo-Uve" secondAttribute="top" constant="70" id="4Ff-vD-sG7"/>
+                            <constraint firstItem="MmY-3Y-OwX" firstAttribute="top" secondItem="Hbh-mN-Ozm" secondAttribute="bottom" id="LAX-yO-sUj"/>
+                            <constraint firstItem="Hbh-mN-Ozm" firstAttribute="trailing" secondItem="YP9-2d-AvQ" secondAttribute="trailing" id="Qr8-oR-0gD"/>
+                            <constraint firstItem="YP9-2d-AvQ" firstAttribute="trailing" secondItem="mMH-jq-EMO" secondAttribute="trailing" constant="150" id="X3A-0Q-muD"/>
+                            <constraint firstItem="MmY-3Y-OwX" firstAttribute="bottom" secondItem="YP9-2d-AvQ" secondAttribute="bottom" id="Y0d-4M-TWN"/>
+                            <constraint firstItem="MmY-3Y-OwX" firstAttribute="trailing" secondItem="YP9-2d-AvQ" secondAttribute="trailing" id="gcw-wE-a02"/>
+                            <constraint firstItem="mMH-jq-EMO" firstAttribute="top" secondItem="YP9-2d-AvQ" secondAttribute="top" constant="13" id="h8T-9j-3DY"/>
+                            <constraint firstItem="lDZ-4O-ptD" firstAttribute="top" secondItem="YP9-2d-AvQ" secondAttribute="top" constant="13" id="iAN-Cv-N9Y"/>
+                            <constraint firstItem="lDZ-4O-ptD" firstAttribute="leading" secondItem="YP9-2d-AvQ" secondAttribute="leading" constant="20" id="kdd-lS-xFO"/>
+                            <constraint firstItem="MmY-3Y-OwX" firstAttribute="top" secondItem="vw7-Qo-Uve" secondAttribute="top" constant="114" id="rGF-jk-vYa"/>
+                            <constraint firstItem="mMH-jq-EMO" firstAttribute="leading" secondItem="lDZ-4O-ptD" secondAttribute="trailing" constant="4" id="x0Y-4K-BZL"/>
+                            <constraint firstItem="Hbh-mN-Ozm" firstAttribute="leading" secondItem="YP9-2d-AvQ" secondAttribute="leading" id="xcd-Tu-L22"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YP9-2d-AvQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8E-sL-RiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="161.46926536731635"/>
+        </scene>
+    </scenes>
+</document>

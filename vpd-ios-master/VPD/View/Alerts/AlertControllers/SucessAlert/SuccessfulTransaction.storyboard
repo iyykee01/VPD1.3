@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y9v-sq-W0A">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Black.ttf">
+            <string>Muli-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Success Full Transaction View Controller-->
+        <scene sceneID="PjB-0E-rKK">
+            <objects>
+                <viewController storyboardIdentifier="successfulTransaction" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="y9v-sq-W0A" customClass="SuccessFullTransactionViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iKl-M3-yt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="58L-Cs-yW4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-Fw-U1A">
+                                <rect key="frame" x="20" y="180" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H9z-j3-47g"/>
+                                    <constraint firstAttribute="width" constant="50" id="v95-tw-JhU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment updated" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-sk-Tl1">
+                                <rect key="frame" x="25" y="260" width="325" height="85.5"/>
+                                <fontDescription key="fontDescription" name="Muli-Black" family="Muli Black" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i5-2q-j55" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                <rect key="frame" x="40" y="582" width="295" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="r6N-q0-XEu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.2675342345505618" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="y9v-sq-W0A" eventType="touchUpInside" id="yu1-8p-TSJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bte-sk-Tl1" firstAttribute="top" secondItem="sHF-Fw-U1A" secondAttribute="bottom" constant="30" id="0sM-gP-VCD"/>
+                            <constraint firstItem="58L-Cs-yW4" firstAttribute="leading" secondItem="xNl-1M-gsz" secondAttribute="leading" id="1iK-cW-6xZ"/>
+                            <constraint firstItem="1i5-2q-j55" firstAttribute="leading" secondItem="xNl-1M-gsz" secondAttribute="leading" constant="40" id="8S0-fZ-xTZ"/>
+                            <constraint firstItem="xNl-1M-gsz" firstAttribute="bottom" secondItem="58L-Cs-yW4" secondAttribute="bottom" id="AfH-aK-wqZ"/>
+                            <constraint firstItem="Bte-sk-Tl1" firstAttribute="leading" secondItem="xNl-1M-gsz" secondAttribute="leading" constant="25" id="Fzb-sW-5bj"/>
+                            <constraint firstItem="58L-Cs-yW4" firstAttribute="top" secondItem="xNl-1M-gsz" secondAttribute="top" id="Ifn-r2-Age"/>
+                            <constraint firstItem="sHF-Fw-U1A" firstAttribute="leading" secondItem="xNl-1M-gsz" secondAttribute="leading" constant="20" id="Kcl-HG-f6y"/>
+                            <constraint firstItem="sHF-Fw-U1A" firstAttribute="top" secondItem="xNl-1M-gsz" secondAttribute="top" constant="180" id="PuF-J5-AZW"/>
+                            <constraint firstItem="xNl-1M-gsz" firstAttribute="bottom" secondItem="1i5-2q-j55" secondAttribute="bottom" constant="40" id="Qn3-j1-Uya"/>
+                            <constraint firstItem="xNl-1M-gsz" firstAttribute="trailing" secondItem="1i5-2q-j55" secondAttribute="trailing" constant="40" id="Sjh-FO-hDf"/>
+                            <constraint firstAttribute="trailing" secondItem="Bte-sk-Tl1" secondAttribute="trailing" constant="25" id="SnZ-UC-QnF"/>
+                            <constraint firstItem="xNl-1M-gsz" firstAttribute="trailing" secondItem="58L-Cs-yW4" secondAttribute="trailing" id="ZMC-Xj-Bq1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xNl-1M-gsz"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="1i5-2q-j55" id="fL0-Qv-AGM"/>
+                        <outlet property="label" destination="Bte-sk-Tl1" id="eth-HX-5pg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJ2-SO-kSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="812"/>
+        <image name="checked" width="170.5" height="170.5"/>
+    </resources>
+</document>

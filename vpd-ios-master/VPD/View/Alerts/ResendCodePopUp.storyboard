@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Black.ttf">
+            <string>Muli-Black</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Resend Code Pop Up View Controller-->
+        <scene sceneID="z2O-Ri-t8G">
+            <objects>
+                <viewController storyboardIdentifier="ResendCodePopUpVC" modalPresentationStyle="overFullScreen" id="29h-sZ-Rfw" customClass="ResendCodePopUpViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7F-bw-OXB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cv4-bW-djc">
+                                <rect key="frame" x="0.0" y="521" width="375" height="257"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulg-Wh-9iv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-gN-WRP">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgC-ya-aKP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="3PO-bg-XiJ">
+                                                                <rect key="frame" x="20" y="23" width="335" height="54"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z2-PV-hwu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Muli-Black" family="Muli Black" pointSize="24"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to &quot;number&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORk-Tg-KMm">
+                                                                        <rect key="frame" x="0.0" y="23.666666666666629" width="335" height="30.333333333333329"/>
+                                                                        <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="19"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="3PO-bg-XiJ" firstAttribute="leading" secondItem="VgC-ya-aKP" secondAttribute="leading" constant="20" id="ChQ-Yf-nHJ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="3PO-bg-XiJ" secondAttribute="bottom" id="OXE-RL-mNM"/>
+                                                            <constraint firstItem="3PO-bg-XiJ" firstAttribute="top" secondItem="VgC-ya-aKP" secondAttribute="top" constant="23" id="XyR-wz-3Nh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="3PO-bg-XiJ" secondAttribute="trailing" constant="20" id="aFj-1R-zFn"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-qr-7SQ">
+                                                        <rect key="frame" x="0.0" y="77" width="375" height="180"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QYq-w6-WXr">
+                                                                <rect key="frame" x="20" y="30" width="335" height="120"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAP-fD-4t2">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                                        <color key="backgroundColor" red="0.20392156859999999" green="0.70980392160000005" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
+                                                                        <state key="normal" title="Resend code">
+                                                                            <color key="titleColor" red="0.91680374760000005" green="1" blue="0.99017531579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="ResendCodePressed:" destination="29h-sZ-Rfw" eventType="touchUpInside" id="YsW-fK-pOj"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzO-7G-SB2">
+                                                                        <rect key="frame" x="0.0" y="70" width="335" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="20"/>
+                                                                        <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Cancel">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="cancelPopup:" destination="29h-sZ-Rfw" eventType="touchUpInside" id="wCr-P8-g9D"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="QYq-w6-WXr" firstAttribute="top" secondItem="oXD-qr-7SQ" secondAttribute="top" constant="30" id="3kh-lC-agb"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QYq-w6-WXr" secondAttribute="trailing" constant="20" id="6Ol-q4-Ydg"/>
+                                                            <constraint firstItem="QYq-w6-WXr" firstAttribute="leading" secondItem="oXD-qr-7SQ" secondAttribute="leading" constant="20" id="eCU-ew-uC9"/>
+                                                            <constraint firstItem="QYq-w6-WXr" firstAttribute="leading" secondItem="oXD-qr-7SQ" secondAttribute="leading" constant="20" id="jfB-DU-ikw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QYq-w6-WXr" secondAttribute="bottom" constant="30" id="tS6-e0-wHk"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hxg-gN-WRP" secondAttribute="trailing" id="4Dt-53-Ety"/>
+                                            <constraint firstAttribute="bottom" secondItem="hxg-gN-WRP" secondAttribute="bottom" id="78Z-TI-RSa"/>
+                                            <constraint firstItem="hxg-gN-WRP" firstAttribute="leading" secondItem="Ulg-Wh-9iv" secondAttribute="leading" id="AJN-dP-Cpp"/>
+                                            <constraint firstItem="hxg-gN-WRP" firstAttribute="top" secondItem="Ulg-Wh-9iv" secondAttribute="top" id="Gb0-Ja-c6R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ulg-Wh-9iv" secondAttribute="trailing" id="1Lg-am-QqS"/>
+                                    <constraint firstItem="Ulg-Wh-9iv" firstAttribute="leading" secondItem="Cv4-bW-djc" secondAttribute="leading" id="7ob-PE-a1F"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ulg-Wh-9iv" secondAttribute="bottom" id="Cjy-Co-f2w"/>
+                                    <constraint firstItem="Ulg-Wh-9iv" firstAttribute="top" secondItem="Cv4-bW-djc" secondAttribute="top" id="bWw-Fp-VZM"/>
+                                    <constraint firstAttribute="height" constant="257" id="f2s-gt-JUw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.20009655898876405" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cv4-bW-djc" secondAttribute="trailing" id="Az2-7G-tER"/>
+                            <constraint firstItem="Cv4-bW-djc" firstAttribute="bottom" secondItem="2GG-MC-Cy6" secondAttribute="bottom" id="kWh-gH-9yh"/>
+                            <constraint firstItem="Cv4-bW-djc" firstAttribute="leading" secondItem="S7F-bw-OXB" secondAttribute="leading" id="q3l-Kl-mmk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2GG-MC-Cy6"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="dzO-7G-SB2" id="pkc-eu-Khe"/>
+                        <outlet property="overAllContainer" destination="S7F-bw-OXB" id="fGc-g5-Lwe"/>
+                        <outlet property="phoneNumerLabel" destination="ORk-Tg-KMm" id="ruB-ds-Ve3"/>
+                        <outlet property="popupContentView" destination="Ulg-Wh-9iv" id="mzT-tQ-qNc"/>
+                        <outlet property="resendCodeButton" destination="ZAP-fD-4t2" id="5JN-QF-Ekb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2m-vn-EZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="81.2807881773399"/>
+        </scene>
+    </scenes>
+</document>

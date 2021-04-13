@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xye-VT-Sid">
+            <objects>
+                <viewController storyboardIdentifier="FundWalletPopup" modalPresentationStyle="overFullScreen" id="TBl-MK-2Vs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="FundWalletPopup" id="dSl-R7-hQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-x7-S1g">
+                                <rect key="frame" x="0.0" y="322" width="375" height="345"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-aQ-I9b">
+                                        <rect key="frame" x="25" y="30" width="325" height="293"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1j-vC-Vdl" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="73" width="325" height="45"/>
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.70980392160000005" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="3z3-IQ-J3A"/>
+                                                </constraints>
+                                                <state key="normal" title="Bank Transfer">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygz-49-auG" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="146" width="325" height="45"/>
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.70980392160000005" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="HZX-PM-Sr6"/>
+                                                </constraints>
+                                                <state key="normal" title="USSD">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVR-LN-rqP" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="219" width="325" height="45"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="p5S-2Y-lwU"/>
+                                                </constraints>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtE-Rx-kif" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="45"/>
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.70980392160000005" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="4jP-aI-mQ3"/>
+                                                </constraints>
+                                                <state key="normal" title="Credit/ Debit card">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ygz-49-auG" secondAttribute="trailing" id="DWP-Zz-Pls"/>
+                                            <constraint firstAttribute="trailing" secondItem="JtE-Rx-kif" secondAttribute="trailing" id="F6e-bW-fwg"/>
+                                            <constraint firstItem="JtE-Rx-kif" firstAttribute="leading" secondItem="y4o-aQ-I9b" secondAttribute="leading" id="Gsb-4w-94l"/>
+                                            <constraint firstItem="hVR-LN-rqP" firstAttribute="leading" secondItem="y4o-aQ-I9b" secondAttribute="leading" id="InC-Xz-huu"/>
+                                            <constraint firstItem="M1j-vC-Vdl" firstAttribute="top" secondItem="JtE-Rx-kif" secondAttribute="bottom" constant="28" id="Lao-lT-2j8"/>
+                                            <constraint firstAttribute="trailing" secondItem="M1j-vC-Vdl" secondAttribute="trailing" id="N4v-44-Seq"/>
+                                            <constraint firstItem="M1j-vC-Vdl" firstAttribute="leading" secondItem="y4o-aQ-I9b" secondAttribute="leading" id="XyJ-rL-wuO"/>
+                                            <constraint firstItem="hVR-LN-rqP" firstAttribute="top" secondItem="ygz-49-auG" secondAttribute="bottom" constant="28" id="aw8-Z9-PdM"/>
+                                            <constraint firstAttribute="trailing" secondItem="hVR-LN-rqP" secondAttribute="trailing" id="lRf-NR-Kh4"/>
+                                            <constraint firstItem="JtE-Rx-kif" firstAttribute="top" secondItem="y4o-aQ-I9b" secondAttribute="top" id="nW2-2x-FYy"/>
+                                            <constraint firstItem="ygz-49-auG" firstAttribute="leading" secondItem="y4o-aQ-I9b" secondAttribute="leading" id="r9N-lm-dRD"/>
+                                            <constraint firstItem="ygz-49-auG" firstAttribute="top" secondItem="M1j-vC-Vdl" secondAttribute="bottom" constant="28" id="vlB-Zb-J9Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y4o-aQ-I9b" firstAttribute="leading" secondItem="yI0-x7-S1g" secondAttribute="leading" constant="25" id="DyF-iW-O7g"/>
+                                    <constraint firstAttribute="bottom" secondItem="y4o-aQ-I9b" secondAttribute="bottom" constant="22" id="TcJ-qF-2eV"/>
+                                    <constraint firstAttribute="height" constant="345" id="W06-nh-jf8"/>
+                                    <constraint firstItem="y4o-aQ-I9b" firstAttribute="top" secondItem="yI0-x7-S1g" secondAttribute="top" constant="30" id="erm-fI-ptZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="y4o-aQ-I9b" secondAttribute="trailing" constant="25" id="sIA-CC-VCr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.7437236657303371" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yI0-x7-S1g" firstAttribute="bottom" secondItem="4DU-Nf-5qR" secondAttribute="bottom" id="f05-r6-3BA"/>
+                            <constraint firstItem="yI0-x7-S1g" firstAttribute="trailing" secondItem="4DU-Nf-5qR" secondAttribute="trailing" id="gbG-Fy-gie"/>
+                            <constraint firstItem="yI0-x7-S1g" firstAttribute="leading" secondItem="4DU-Nf-5qR" secondAttribute="leading" id="uNL-0w-f1d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4DU-Nf-5qR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wff-G2-Ew5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="101.19940029985008"/>
+        </scene>
+    </scenes>
+</document>

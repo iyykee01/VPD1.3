@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Black.ttf">
+            <string>Muli-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dash Board Alert View Controller-->
+        <scene sceneID="PQM-iI-5AO">
+            <objects>
+                <viewController storyboardIdentifier="DashBoardAlertServiceVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="rSQ-ND-hhS" customClass="DashBoardAlertViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iD9-2Q-fOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-oE-6I0" customClass="DesignableView" customModule="VPD" customModuleProvider="target">
+                                <rect key="frame" x="34" y="261" width="307" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rbk-Nc-D4L">
+                                        <rect key="frame" x="20" y="75" width="267" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="Muli-Black" family="Muli Black" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luy-M8-blL">
+                                        <rect key="frame" x="133.5" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Oc7-fU-acD"/>
+                                            <constraint firstAttribute="height" constant="40" id="bgb-n4-0co"/>
+                                        </constraints>
+                                        <state key="normal" image="x-button"/>
+                                        <connections>
+                                            <action selector="notNowButtonPressed:" destination="rSQ-ND-hhS" eventType="touchUpInside" id="Vcd-ep-CRl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Luy-M8-blL" firstAttribute="top" secondItem="Qfe-oE-6I0" secondAttribute="top" constant="10" id="JHH-cr-sum"/>
+                                    <constraint firstItem="Luy-M8-blL" firstAttribute="centerX" secondItem="Qfe-oE-6I0" secondAttribute="centerX" id="bBE-Sz-O6m"/>
+                                    <constraint firstItem="rbk-Nc-D4L" firstAttribute="top" secondItem="Luy-M8-blL" secondAttribute="bottom" constant="25" id="gkc-14-B6l"/>
+                                    <constraint firstItem="rbk-Nc-D4L" firstAttribute="leading" secondItem="Qfe-oE-6I0" secondAttribute="leading" constant="20" id="kh7-Xo-UeV"/>
+                                    <constraint firstAttribute="height" constant="145" id="vOS-qE-GFF"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbk-Nc-D4L" secondAttribute="trailing" constant="20" id="zHB-wN-tyI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5e4-Gg-Cce" firstAttribute="trailing" secondItem="Qfe-oE-6I0" secondAttribute="trailing" constant="34" id="Cbq-1t-pYJ"/>
+                            <constraint firstItem="Qfe-oE-6I0" firstAttribute="centerY" secondItem="iD9-2Q-fOa" secondAttribute="centerY" id="Jzu-fI-R2A"/>
+                            <constraint firstItem="Qfe-oE-6I0" firstAttribute="leading" secondItem="5e4-Gg-Cce" secondAttribute="leading" constant="34" id="N5Y-bX-xbK"/>
+                            <constraint firstItem="Qfe-oE-6I0" firstAttribute="centerX" secondItem="iD9-2Q-fOa" secondAttribute="centerX" id="UIF-0b-WjT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5e4-Gg-Cce"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertLabel" destination="rbk-Nc-D4L" id="IGs-Df-s4q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1F-7y-vl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="192.95352323838082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x-button" width="170.5" height="170.5"/>
+    </resources>
+</document>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upgrade Wallet View Controller-->
+        <scene sceneID="8FW-Sh-LnF">
+            <objects>
+                <viewController storyboardIdentifier="UpgradeWalletToBank" modalPresentationStyle="overFullScreen" id="TQ2-J4-nxM" customClass="UpgradeWalletViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHH-5s-FWk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-HY-ies" customClass="DesignableView" customModule="VPD" customModuleProvider="target">
+                                <rect key="frame" x="15" y="146.5" width="290" height="275"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade wallet to bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQT-ci-oOC">
+                                        <rect key="frame" x="20" y="60" width="250" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="account." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTR-ci-tJY">
+                                        <rect key="frame" x="50" y="81" width="190" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enjoy borderless banking." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-DQ-HXe">
+                                        <rect key="frame" x="50" y="121" width="190" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will create bank account for you to " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5N-9n-cuS">
+                                        <rect key="frame" x="10" y="105" width="270" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4K-qf-d98" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                        <rect key="frame" x="158" y="157" width="107" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="107" id="Nbm-X3-bd7"/>
+                                            <constraint firstAttribute="height" constant="40" id="PjO-AM-Am5"/>
+                                        </constraints>
+                                        <state key="normal" title="Not now">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="notNowButtonPressed:" destination="TQ2-J4-nxM" eventType="touchUpInside" id="lSL-tF-NY0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-fV-0ga" customClass="DesignableButton" customModule="VPD" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="157" width="107" height="40"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.70980392160000005" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lE1-jA-wZh"/>
+                                            <constraint firstAttribute="width" constant="107" id="ubh-vq-WHu"/>
+                                        </constraints>
+                                        <state key="normal" title="Proceed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="proceedButtonPressed:" destination="TQ2-J4-nxM" eventType="touchUpInside" id="nHG-C1-WfU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cTR-ci-tJY" firstAttribute="top" secondItem="DQT-ci-oOC" secondAttribute="bottom" id="2J0-Mw-5HS"/>
+                                    <constraint firstAttribute="trailing" secondItem="DQT-ci-oOC" secondAttribute="trailing" constant="20" id="2Kd-iQ-0et"/>
+                                    <constraint firstAttribute="trailing" secondItem="mTK-DQ-HXe" secondAttribute="trailing" constant="50" id="5fh-uP-24f"/>
+                                    <constraint firstAttribute="height" constant="275" id="8in-8N-SMW"/>
+                                    <constraint firstItem="mTK-DQ-HXe" firstAttribute="leading" secondItem="YSZ-HY-ies" secondAttribute="leading" constant="50" id="BDl-bb-88T"/>
+                                    <constraint firstItem="S5N-9n-cuS" firstAttribute="top" secondItem="cTR-ci-tJY" secondAttribute="bottom" constant="3" id="CaD-6C-dbK"/>
+                                    <constraint firstItem="Z4K-qf-d98" firstAttribute="top" secondItem="mTK-DQ-HXe" secondAttribute="bottom" constant="20" id="Cma-cl-YjN"/>
+                                    <constraint firstItem="DQT-ci-oOC" firstAttribute="leading" secondItem="YSZ-HY-ies" secondAttribute="leading" constant="20" id="G7U-SQ-cEt"/>
+                                    <constraint firstAttribute="trailing" secondItem="S5N-9n-cuS" secondAttribute="trailing" constant="10" id="KOf-uX-Kj4"/>
+                                    <constraint firstAttribute="width" constant="290" id="RaK-1v-iGK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z4K-qf-d98" secondAttribute="trailing" constant="25" id="UQ6-fS-dcP"/>
+                                    <constraint firstItem="cTR-ci-tJY" firstAttribute="leading" secondItem="YSZ-HY-ies" secondAttribute="leading" constant="50" id="aCY-Ih-gfA"/>
+                                    <constraint firstItem="DQT-ci-oOC" firstAttribute="top" secondItem="YSZ-HY-ies" secondAttribute="top" constant="60" id="abP-P0-Jo9"/>
+                                    <constraint firstAttribute="trailing" secondItem="cTR-ci-tJY" secondAttribute="trailing" constant="50" id="erd-aV-D0E"/>
+                                    <constraint firstItem="S5N-9n-cuS" firstAttribute="leading" secondItem="YSZ-HY-ies" secondAttribute="leading" constant="10" id="iV1-3k-U1Y"/>
+                                    <constraint firstItem="hu3-fV-0ga" firstAttribute="top" secondItem="mTK-DQ-HXe" secondAttribute="bottom" constant="20" id="sTa-nI-dpS"/>
+                                    <constraint firstItem="mTK-DQ-HXe" firstAttribute="top" secondItem="S5N-9n-cuS" secondAttribute="bottom" id="uHK-Uo-2Jb"/>
+                                    <constraint firstItem="hu3-fV-0ga" firstAttribute="leading" secondItem="YSZ-HY-ies" secondAttribute="leading" constant="25" id="z3g-2F-if6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.802514922752809" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YSZ-HY-ies" firstAttribute="centerY" secondItem="YHH-5s-FWk" secondAttribute="centerY" id="W9a-fY-Xd3"/>
+                            <constraint firstItem="YSZ-HY-ies" firstAttribute="centerX" secondItem="YHH-5s-FWk" secondAttribute="centerX" id="y9F-Ra-6we"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6r-1u-CMR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PqP-02-uBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.2" y="-21.139430284857571"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,21 @@
+{
+"message":
+     {
+          "topic":"topic",
+          "notification":
+               {
+                    "body":"body",
+                    "title":"title"
+               },
+          "apns":
+               {
+                    "payload":
+                         {
+                              "aps":
+                                   {
+                                        "sound":"default"
+                                   }
+                         }
+               }
+     }
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Black.ttf">
+            <string>Muli-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Success Alert View Controller-->
+        <scene sceneID="v9w-c3-AVX">
+            <objects>
+                <viewController storyboardIdentifier="SuccessPopUpVc" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="L0a-mi-RAz" customClass="SuccessAlertViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfJ-ZM-ckC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9z6-IM-rmi" customClass="DesignableView" customModule="VPD" customModuleProvider="target">
+                                <rect key="frame" x="62" y="328" width="290" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOJ-FR-Bt6">
+                                        <rect key="frame" x="119" y="35" width="52" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="aQ8-co-hEg"/>
+                                            <constraint firstAttribute="width" constant="52" id="xQO-nn-Q4K"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="checked"/>
+                                        <connections>
+                                            <action selector="successButtonPressed:" destination="L0a-mi-RAz" eventType="touchUpInside" id="C4f-ld-0BF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Changed Successful" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZr-Bk-1Hr">
+                                        <rect key="frame" x="20" y="137" width="250" height="60.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Muli-Black" family="Muli Black" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="F8e-tv-rle"/>
+                                    <constraint firstItem="mZr-Bk-1Hr" firstAttribute="centerX" secondItem="9z6-IM-rmi" secondAttribute="centerX" id="LfY-Nl-qds"/>
+                                    <constraint firstItem="mZr-Bk-1Hr" firstAttribute="leading" secondItem="9z6-IM-rmi" secondAttribute="leading" constant="20" id="Os6-QZ-aWv"/>
+                                    <constraint firstAttribute="trailing" secondItem="mZr-Bk-1Hr" secondAttribute="trailing" constant="20" id="SDS-51-v0w"/>
+                                    <constraint firstItem="mZr-Bk-1Hr" firstAttribute="top" secondItem="dOJ-FR-Bt6" secondAttribute="bottom" constant="50" id="b0G-3d-PDX"/>
+                                    <constraint firstItem="dOJ-FR-Bt6" firstAttribute="top" secondItem="9z6-IM-rmi" secondAttribute="top" constant="35" id="giR-dS-7lF"/>
+                                    <constraint firstAttribute="height" constant="240" id="uVY-Ir-yrd"/>
+                                    <constraint firstItem="dOJ-FR-Bt6" firstAttribute="centerX" secondItem="9z6-IM-rmi" secondAttribute="centerX" id="veu-1C-yo2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9z6-IM-rmi" firstAttribute="centerY" secondItem="wfJ-ZM-ckC" secondAttribute="centerY" id="9HK-p6-mdh"/>
+                            <constraint firstItem="9z6-IM-rmi" firstAttribute="centerX" secondItem="wfJ-ZM-ckC" secondAttribute="centerX" id="mR4-OP-NXd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f5C-70-t9e"/>
+                    </view>
+                    <connections>
+                        <outlet property="OverallViewContainer" destination="wfJ-ZM-ckC" id="JYT-Y6-1O7"/>
+                        <outlet property="alertLabel" destination="mZr-Bk-1Hr" id="K8a-FV-MTd"/>
+                        <outlet property="successPopup" destination="9z6-IM-rmi" id="TXZ-0w-BRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhH-2T-Du5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checked" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>

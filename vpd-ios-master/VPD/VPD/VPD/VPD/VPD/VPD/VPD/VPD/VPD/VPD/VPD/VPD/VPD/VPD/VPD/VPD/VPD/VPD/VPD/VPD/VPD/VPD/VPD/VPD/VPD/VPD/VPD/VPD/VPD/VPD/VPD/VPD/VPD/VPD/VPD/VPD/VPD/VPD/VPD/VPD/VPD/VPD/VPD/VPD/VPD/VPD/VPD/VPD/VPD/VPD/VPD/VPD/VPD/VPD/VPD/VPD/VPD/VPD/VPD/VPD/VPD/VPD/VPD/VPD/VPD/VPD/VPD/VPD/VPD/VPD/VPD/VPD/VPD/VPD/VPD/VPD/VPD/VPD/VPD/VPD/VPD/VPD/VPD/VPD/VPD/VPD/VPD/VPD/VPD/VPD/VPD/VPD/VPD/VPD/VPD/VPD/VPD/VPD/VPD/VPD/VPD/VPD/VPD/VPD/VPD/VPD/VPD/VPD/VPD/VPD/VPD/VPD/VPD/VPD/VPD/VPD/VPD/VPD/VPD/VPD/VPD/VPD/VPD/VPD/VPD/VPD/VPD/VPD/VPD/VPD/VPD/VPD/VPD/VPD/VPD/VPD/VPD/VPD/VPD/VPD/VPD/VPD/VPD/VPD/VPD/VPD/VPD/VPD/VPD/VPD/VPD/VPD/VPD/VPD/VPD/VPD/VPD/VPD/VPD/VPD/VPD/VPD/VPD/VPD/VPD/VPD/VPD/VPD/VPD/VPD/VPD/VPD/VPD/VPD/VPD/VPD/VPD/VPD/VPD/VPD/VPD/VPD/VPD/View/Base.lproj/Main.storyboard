@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjN-RX-aCH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="FpS-eP-vbh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vogue Pay Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uxq-Ja-sN8">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bg5-PJ-e54"/>
+                                    <constraint firstAttribute="height" constant="128" id="qk8-1V-XC8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle 1" translatesAutoresizingMaskIntoConstraints="NO" id="ozF-Hq-y63">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Wnr-JK-4dz"/>
+                                    <constraint firstAttribute="width" constant="240" id="g3A-xq-dIX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle 2" translatesAutoresizingMaskIntoConstraints="NO" id="hmp-oG-8Jf">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5Rw-Au-NLe"/>
+                                    <constraint firstAttribute="height" constant="128" id="NIj-6i-Pys"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle 3" translatesAutoresizingMaskIntoConstraints="NO" id="ihY-yg-siv">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9pa-Uf-Jlr"/>
+                                    <constraint firstAttribute="height" constant="128" id="kTv-JF-Yoh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle 4" translatesAutoresizingMaskIntoConstraints="NO" id="PzB-qR-imn">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Vt3-aO-wTA"/>
+                                    <constraint firstAttribute="height" constant="128" id="uhk-Px-KPe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uxq-Ja-sN8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8F3-dX-P6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FpS-eP-vbh" secondAttribute="bottom" id="8yh-dc-gGm"/>
+                            <constraint firstItem="PzB-qR-imn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EOH-Vz-RVg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FpS-eP-vbh" secondAttribute="trailing" id="SEc-8a-pob"/>
+                            <constraint firstItem="FpS-eP-vbh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TdY-WK-dy8"/>
+                            <constraint firstItem="hmp-oG-8Jf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WKQ-2i-Uid"/>
+                            <constraint firstItem="FpS-eP-vbh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="clN-Gm-eM3"/>
+                            <constraint firstItem="ozF-Hq-y63" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dJK-aN-q6z"/>
+                            <constraint firstItem="ozF-Hq-y63" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ega-wX-Wly"/>
+                            <constraint firstItem="hmp-oG-8Jf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPY-Nr-XHZ"/>
+                            <constraint firstItem="ihY-yg-siv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iZS-x0-dMj"/>
+                            <constraint firstItem="PzB-qR-imn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k9f-ME-ZP2"/>
+                            <constraint firstItem="Uxq-Ja-sN8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pMc-AF-18P"/>
+                            <constraint firstItem="ihY-yg-siv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rLX-py-ul0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F7j-eG-vYe"/>
+                    <connections>
+                        <outlet property="circle1" destination="ozF-Hq-y63" id="6yV-r2-qUl"/>
+                        <outlet property="circle2" destination="hmp-oG-8Jf" id="gxe-uh-ijI"/>
+                        <outlet property="circle3" destination="ihY-yg-siv" id="KNg-qc-0hb"/>
+                        <outlet property="circle4" destination="PzB-qR-imn" id="A8V-6T-TCY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016.8" y="114.69265367316342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="83w-G2-s0e">
+            <objects>
+                <viewController id="hJh-02-xDX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ep7-L3-oCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eDh-lg-7f1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5o-zx-8NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2722.4000000000001" y="114.69265367316342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dn7-tK-T8r">
+            <objects>
+                <viewController id="vej-nO-8wj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JAv-AE-LtA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JyI-JB-eZ9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iP8-gk-znX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3423.1999999999998" y="114.69265367316342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xdf-So-aw9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kjN-RX-aCH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbD-EM-4d0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BSi-sw-kn8" kind="relationship" relationship="rootViewController" id="1Fv-7g-Z9H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5Q-Gc-nS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="114.69265367316342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n0j-qh-MPR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BSi-sw-kn8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="iAv-uh-hhu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tt5-jV-mWn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Ed-rG-e8p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAd-qh-IxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="114.69265367316342"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="812"/>
+        <image name="Circle 1" width="492.5" height="493.5"/>
+        <image name="Circle 2" width="821" height="821.5"/>
+        <image name="Circle 3" width="1124" height="1149.5"/>
+        <image name="Circle 4" width="1125" height="1517.5"/>
+        <image name="Vogue Pay Logo" width="57.5" height="50"/>
+    </resources>
+</document>
